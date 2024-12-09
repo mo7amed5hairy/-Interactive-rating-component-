@@ -44,7 +44,7 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
   background-color: var(--DarkBlue);
   border-radius: 25px;
   padding: 30px 30px;
