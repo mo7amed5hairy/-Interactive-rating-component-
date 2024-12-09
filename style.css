@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root
+{
+ /*  Primary */
+
+--Orange: hsl(25, 97%, 53%);
+
+/* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+body
+{
+    background-color: var(--VeryDarkBlue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* rating */
+  #wrapper > main > .rating
+{
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: var(--DarkBlue);
+  border-radius: 25px;
+  padding: 30px 30px;
+  margin: auto;
+
+}
+#wrapper > main > .rating.hide
+{
+    display: none;
+}
+
+
+
+  #wrapper > main > .rating > img
+{
+    margin-bottom: 1rem;
+    background: #6b6e7026;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
+  #wrapper > main > .rating > h1
+{
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--White);
+    line-height: 1;
+}
+
+  #wrapper > main > .rating > p
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--LightGrey);
+    line-height: 1.5;
+    margin-bottom: .5rem;
+}
+
+  #wrapper > main > .rating > form
+{
+    width: 100%;
+}
+
+  #wrapper > main > .rating > form > button
+
+{
+  min-width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 13px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--DarkSlateGrey);
+  background-color: var(--Orange);
+  color: var(--DarkBlue);
+  margin-top: .8rem;
+  cursor:pointer;
+  border-radius: 25px;
+}
+
+  #wrapper > main > .rating > form > button:hover
+{
+    background-color: var(--White);
+}
+
+  #wrapper > main > .rating > .rating_buttons > .btn
+{
+    min-width: 45px;
+    min-height: 45px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    background: #6b6e7026;
+    color: var(--LightGrey);
+    cursor: pointer;
+    
+  }
+
+  #wrapper > main > .rating > .rating_buttons > .btn.clicked
+  {
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(213, 19%, 18%);
+  }
+
+    #wrapper > main > .rating >.rating_buttons > .btn:hover
+  {
+    background-color: var(--White);
+    color: var(--DarkBlue);
+  }
+
+    #wrapper > main > .rating > .rating_buttons
+  {
+    max-width: 100%;
+    display: flex;
+    gap: 23px;
+    
+  }
+
+/* rating */
+
+
+/* thank you message */
+
+/* rating */
+  #wrapper > main > .thank_you
+{
+  margin:10px auto;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--DarkBlue);
+  border-radius: 25px;
+  padding: 30px 30px;
+  display: none;
+
+}
+
+#wrapper > main > .thank_you.active
+{
+    display: flex;
+}
+
+
+
+  #wrapper > main > .thank_you > h1
+{
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--White);
+    line-height: 1;
+}
+
+#wrapper > main > .thank_you > p.chosen_rate
+{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Orange);
+  line-height: 1.5;
+  margin-bottom: .5rem;
+  text-align: center;
+  background: #6b6e7026;
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin: 10px 0 20px;
+}
+
+#wrapper > main > .thank_you > p
+{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--LightGrey);
+  line-height: 1.5;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+/* thank you message */
+
+
+
+
+/* mobile view */
+@media (min-width:360px) and (max-width:730px)
+{
+  #wrapper > main > .rating
+  {
+    max-width: 80%;
+  }
+
+  #wrapper > main > .thank_you
+  {
+    
+    max-width: 60%;
+  }
+
+}
+/* mobile view */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {color: var(--White); margin-top: 20px; font-size: 11px; text-align: center; }
+.attribution a { color: var(--Orange); }
